@@ -6,5 +6,7 @@ dynarr_tests:
 	gcc -g dynarr_tests.c -o dynnarr_tests.out
 ht_tests:
 	gcc -g hashtable_tests.c -o ht_tests.out
+bf_tests:
+	gcc -g bf_tests.c -o bf_tests.out
 clean:
 	rm *.out
