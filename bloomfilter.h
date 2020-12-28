@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#define BIT_FIELD_LEN 8 
+#define BIT_FIELD_LEN 16 
 
 /*
  * Bloom filter

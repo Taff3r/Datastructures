@@ -33,9 +33,22 @@ int main(void)
   
   put(bf, 10);
   put(bf, 100200121);
+  put(bf, 123);
+  put(bf, 7181212);
+  put(bf, 123123);
+
+  unsigned int i;
+  for (i = 0; i < 100; ++i)
+    put(bf, i);
+
   assert(1 == can_contain(bf, 10));
   assert(1 == can_contain(bf, 100200121));
-  assert(0 == can_contain(bf, 1));
+  print_filter(bf, out);
+
+  for (i = 0; i < 100; ++i)
+    assert(1 == can_contain(bf, i));
+
+  assert(0 == can_contain(bf, 101));
   delete_bloom_filter(bf);
   printf("Done!\n");
 }
