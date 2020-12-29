@@ -6,6 +6,9 @@
 #define BIT_FIELD_LEN 16 
 
 /*
+ *
+ * VERSIONS:
+ * 	2020-12-28: Version Alpha 0.9 Simon Tenggren (@Taff3r)
  * Bloom filter
  * Wikipedia: https://en.wikipedia.org/wiki/Bloom_filter
  * 
